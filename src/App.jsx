@@ -57,7 +57,7 @@ function App() {
     setProjectState((prevState) => {
       return {
         ...prevState,
-        selectedProjectID: noProject,
+        
         projects: prevState.projects.filter((project) => {
           project.id == prevState.selectedProjectID; // can also use project.id !== prevState.selectedProjectID
           return false; //both of these method will return an array in which the selected project is not present.
